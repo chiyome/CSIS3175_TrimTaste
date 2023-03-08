@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TrimTaste</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtOr">or</string>
+    <string name="imgDes">TrimTaste Logo Image</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+</resources>
