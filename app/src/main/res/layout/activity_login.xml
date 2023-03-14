@@ -7,46 +7,28 @@
     android:background="@color/background"
     tools:context=".Welcome">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="314dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="92dp"
-        android:contentDescription="@string/imgDes"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/trimtaste_logo" />
-
-    <TextView
-        android:id="@+id/txtUsername"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edTxtUsername"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
-        android:text="@string/txtUsername"
-        android:textColor="#00796B"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/edTxtUsername"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:text="@string/txtPassword"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintUsername"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColor="@color/BasilGreen_500"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/edTxtPassword"
-        app:layout_constraintTop_toBottomOf="@+id/edTxtUsername"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/edTxtPassword"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="42dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/hintPassword"
@@ -56,31 +38,24 @@
         app:layout_constraintEnd_toEndOf="@+id/edTxtUsername"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edTxtUsername"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtUsername"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
-    <EditText
-        android:id="@+id/edTxtUsername"
-        android:layout_width="300dp"
+    <TextView
+        android:id="@+id/txtYet"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/hintUsername"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColor="@color/BasilGreen_500"
+        android:layout_marginTop="56dp"
+        android:text="@string/txtYet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsername"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/round_button"
         android:backgroundTint="@color/BasilOrange"
         android:text="@string/btnLogin"
@@ -94,10 +69,10 @@
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnToSignup"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/round_button"
         android:backgroundTint="@color/BasilGreen_100"
         android:text="@string/btnSignUp"
@@ -105,16 +80,21 @@
         android:textColor="@color/BasilGreen_800"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/txtYet" />
 
     <TextView
-        android:id="@+id/txtOr"
+        android:id="@+id/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txtOr"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txtLogin"
+        android:textColor="@color/BasilGreen_800"
+        android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

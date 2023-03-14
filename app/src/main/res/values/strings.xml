@@ -1,11 +1,33 @@
 <resources>
     <string name="app_name">TrimTaste</string>
-    <string name="txtUsername">Username</string>
-    <string name="txtPassword">Password</string>
     <string name="btnLogin">Login</string>
     <string name="btnSignUp">Sign Up</string>
-    <string name="txtOr">or</string>
+    <string name="txtYet">Don\'t have an account yet?</string>
     <string name="imgDes">TrimTaste Logo Image</string>
     <string name="hintUsername">Username</string>
     <string name="hintPassword">Password</string>
+    <string name="txtLogin">LOGIN</string>
+    <string name="txtCreate">Create Account</string>
+    <string name="hintStAddress">Street address</string>
+    <string name="hintCity">City</string>
+    <string name="hintPostalCode">Postal code</string>
+    <string name="hint">Phone number</string>
+    <string name="hintEmail">Email address</string>
+    <string name="promptProvince">Province</string>
+    <string-array name="groupProvince">
+        <item>AB</item>
+        <item>BC</item>
+        <item>MB</item>
+        <item>NB</item>
+        <item>NL</item>
+        <item>NT</item>
+        <item>NS</item>
+        <item>NU</item>
+        <item>ON</item>
+        <item>PE</item>
+        <item>QC</item>
+        <item>SK</item>
+        <item>YT</item>
+    </string-array>
+
 </resources>
