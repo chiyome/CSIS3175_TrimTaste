@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Signup">
+
+    <TextView
+        android:id="@+id/txtCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txtCreate"
+        android:textColor="@color/BasilGreen_800"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edTxtUNameReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintUsername"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCreate" />
+
+    <EditText
+        android:id="@+id/edTxtStAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintStAddress"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtUNameReg"
+        app:layout_constraintStart_toStartOf="@+id/edTxtUNameReg"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtUNameReg" />
+
+    <EditText
+        android:id="@+id/edTxtCity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/hintCity"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtStAddress"
+        app:layout_constraintStart_toStartOf="@+id/edTxtStAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtStAddress"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/spnProvince"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/groupProvince"
+        android:minHeight="48dp"
+        android:prompt="@string/promptProvince"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/edTxtCity"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtCity" />
+
+    <EditText
+        android:id="@+id/edTxtPostal"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintPostalCode"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtCity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spnProvince"
+        app:layout_constraintTop_toTopOf="@+id/spnProvince" />
+
+    <EditText
+        android:id="@+id/edTxtPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtPostal"
+        app:layout_constraintStart_toStartOf="@+id/spnProvince"
+        app:layout_constraintTop_toBottomOf="@+id/spnProvince" />
+
+    <EditText
+        android:id="@+id/edTxtPassReg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintPassword"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtEmail"
+        app:layout_constraintStart_toStartOf="@+id/edTxtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtEmail" />
+
+    <EditText
+        android:id="@+id/edTxtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTxtPhone"
+        app:layout_constraintStart_toStartOf="@+id/edTxtPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edTxtPhone" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/BasilGreen_100"
+        android:text="@string/btnSignUp"
+        android:textAllCaps="false"
+        android:textColor="@color/BasilGreen_800"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
