@@ -14,6 +14,15 @@
     <string name="hint">Phone number</string>
     <string name="hintEmail">Email address</string>
     <string name="promptProvince">Province</string>
+    <string name="btnSignManager">Sign Up as a Manager</string>
+    <string name="btnaddorremove">Add/Remove Food Items</string>
+    <string name="btnVieworEdit">View/Edit Orders</string>
+    <string name="btnSendReminder">Send a Reminder</string>
+    <string name="btnGenerateReport">Generate Reports</string>
+    <string name="btnLogout">Log out</string>
+    <string name="txtTitle">Welcome To TrimTaste</string>
+    <string name="txtList">Items list</string>
+    <string name="images">An image</string>
     <string-array name="groupProvince">
         <item>AB</item>
         <item>BC</item>
