@@ -14,14 +14,14 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        EditText username = findViewById(R.id.edTxtUNameReg);
+        EditText usernameReg = findViewById(R.id.edTxtUNameReg);
         EditText streetAddress = findViewById(R.id.edTxtStAddress);
         EditText city = findViewById(R.id.edTxtCity);
         Spinner province = findViewById(R.id.spnProvince);
         EditText postalCode = findViewById(R.id.edTxtPostal);
         EditText phone = findViewById(R.id.edTxtPhone);
         EditText email = findViewById(R.id.edTxtEmail);
-        EditText password = findViewById(R.id.edTxtPassReg);
+        EditText passwordReg = findViewById(R.id.edTxtPassReg);
         Button btnSignup = findViewById(R.id.btnSignup);
 
     }
