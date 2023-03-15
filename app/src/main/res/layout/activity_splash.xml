@@ -28,5 +28,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tt_logo" />
+        app:srcCompat="@drawable/trimtaste_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
