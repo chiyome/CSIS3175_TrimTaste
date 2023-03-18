@@ -27,7 +27,7 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity_user"
             android:exported="true" >
         </activity>
     </application>
