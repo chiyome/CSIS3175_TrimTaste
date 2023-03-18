@@ -5,10 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity_admin">
+
+    <TextView
+        android:id="@+id/txtAdminHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/txtAdminHome"
+        android:textAllCaps="false"
+        android:textColor="@color/BasilGreen_800"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imgBtnOrderFood"
+        android:id="@+id/imgBtnViewOrders"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_weight="1"
@@ -18,16 +32,15 @@
         android:elevation="8dp"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imgBtnViewHistory"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgBtnSearch"
-        app:layout_constraintTop_toBottomOf="@+id/txtAdminHome"
-        app:srcCompat="@drawable/order_food"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnAddItems"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnAddItems"
+        app:srcCompat="@drawable/view_orders"
         tools:ignore="RedundantDescriptionCheck" />
 
     <ImageButton
-        android:id="@+id/imgBtnViewHistory"
+        android:id="@+id/imgBtnReports"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_weight="1"
@@ -35,37 +48,17 @@
         android:background="@drawable/button_menu"
         android:contentDescription="@string/ConDesHistory"
         android:elevation="8dp"
-        android:padding="15dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imgBtnLogout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgBtnOrderDetails"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtnOrderFood"
-        app:srcCompat="@drawable/view_history"
-        tools:ignore="RedundantDescriptionCheck" />
-
-    <ImageButton
-        android:id="@+id/imgBtnProfile"
-        android:layout_width="150dp"
-        android:layout_height="170dp"
-        android:layout_weight="1"
-        android:adjustViewBounds="true"
-        android:background="@drawable/button_menu"
-        android:contentDescription="@string/ConDesProfile"
-        android:elevation="8dp"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imgBtnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtnOrderDetails"
-        app:srcCompat="@drawable/profile"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnReminder"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnReminder"
+        app:srcCompat="@drawable/reports"
         tools:ignore="RedundantDescriptionCheck" />
 
     <ImageButton
-        android:id="@+id/imgBtnOrderDetails"
+        android:id="@+id/imgBtnReminder"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_weight="1"
@@ -75,16 +68,16 @@
         android:elevation="8dp"
         android:padding="15dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imgBtnProfile"
-        app:layout_constraintEnd_toStartOf="@+id/imgBtnViewHistory"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnLogout"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnReports"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtnSearch"
-        app:srcCompat="@drawable/details"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnAddItems"
+        app:srcCompat="@drawable/reminder"
         tools:ignore="RedundantDescriptionCheck" />
 
     <ImageButton
-        android:id="@+id/imgBtnSearch"
+        android:id="@+id/imgBtnAddItems"
         android:layout_width="150dp"
         android:layout_height="170dp"
         android:layout_weight="1"
@@ -94,12 +87,12 @@
         android:elevation="8dp"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imgBtnOrderDetails"
-        app:layout_constraintEnd_toStartOf="@+id/imgBtnOrderFood"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnReminder"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnViewOrders"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAdminHome"
-        app:srcCompat="@drawable/search"
+        app:srcCompat="@drawable/add_items"
         tools:ignore="RedundantDescriptionCheck" />
 
     <ImageButton
@@ -114,26 +107,10 @@
         android:padding="10dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgBtnProfile"
-        app:layout_constraintTop_toBottomOf="@+id/imgBtnViewHistory"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnReminder"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnReminder"
         app:srcCompat="@drawable/logout"
         tools:ignore="RedundantDescriptionCheck" />
-
-    <TextView
-        android:id="@+id/txtAdminHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtReduce"
-        android:textAllCaps="false"
-        android:textColor="@color/BasilGreen_800"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

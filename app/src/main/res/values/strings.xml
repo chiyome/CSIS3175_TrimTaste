@@ -14,6 +14,17 @@
     <string name="hint">Phone number</string>
     <string name="hintEmail">Email address</string>
     <string name="promptProvince">Province</string>
+    <string name="hintSearch">Enter the city to search for</string>
+    <string name="btnFind">Go</string>
+    <string name="txtFindARes">Find A Restaurant</string>
+    <string name="txtReduce">Reduce Food Waste &amp; Enjoy Your Meal!</string>
+    <string name="conDesSearch">Image button Search</string>
+    <string name="conDesFood">Image button Order Food</string>
+    <string name="ConDesDetails">Image Button View an order details</string>
+    <string name="ConDesHistory">Image Button Order History</string>
+    <string name="ConDesProfile">Image Button View/Edit User profile</string>
+    <string name="ConDesLogout">Image Button Order Log out</string>
+    <string name="txtAdminHome">Reduce Food Waste in Your Restauraunt</string>
     <string-array name="groupProvince">
         <item>AB</item>
         <item>BC</item>
