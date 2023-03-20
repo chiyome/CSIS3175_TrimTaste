@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">TrimTaste</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtYet">Don\'t have an account yet?</string>
+    <string name="imgDes">TrimTaste Logo Image</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="txtLogin">LOGIN</string>
+    <string name="txtCreate">Create Account</string>
+    <string name="hintStAddress">Street address</string>
+    <string name="hintCity">City</string>
+    <string name="hintPostalCode">Postal code</string>
+    <string name="hint">Phone number</string>
+    <string name="hintEmail">Email address</string>
+    <string name="promptProvince">Province</string>
+    <string name="hintSearch">Enter the city to search for</string>
+    <string name="btnFind">Go</string>
+    <string name="txtFindARes">Find A Restaurant</string>
+    <string name="txtReduce">Reduce Food Waste &amp; Enjoy Your Meal!</string>
+    <string name="conDesSearch">Image button Search</string>
+    <string name="conDesFood">Image button Order Food</string>
+    <string name="ConDesDetails">Image Button View an order details</string>
+    <string name="ConDesHistory">Image Button Order History</string>
+    <string name="ConDesProfile">Image Button View/Edit User profile</string>
+    <string name="ConDesLogout">Image Button Order Log out</string>
+    <string name="txtAdminHome">Reduce Food Waste in Your Restauraunt</string>
+    <string name="conDes">A restaurant image</string>
+    <string-array name="groupProvince">
+        <item>AB</item>
+        <item>BC</item>
+        <item>MB</item>
+        <item>NB</item>
+        <item>NL</item>
+        <item>NT</item>
+        <item>NS</item>
+        <item>NU</item>
+        <item>ON</item>
+        <item>PE</item>
+        <item>QC</item>
+        <item>SK</item>
+        <item>YT</item>
+    </string-array>
+
+</resources>
