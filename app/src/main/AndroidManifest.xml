@@ -12,12 +12,17 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".AddorRemoveActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:name=".Admin_ViewEditFoodOrders"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_AddRemobeItems"
+            android:exported="false" />
+        <activity
+            android:name=".User_ConfirmOrder"
+            android:exported="false" />
+        <activity
+            android:name=".User_EachRestaurant"
+            android:exported="false" />
         <activity
             android:name=".Signup"
             android:exported="false" />
@@ -34,8 +39,8 @@
             android:name=".Login"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:name=".User_MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
